@@ -12,19 +12,18 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   color: var(--clr-dark);
   font-weight: 400;
-}
-
-body {
-  margin: 0px;
   font-family: "Inter", sans-serif;
 }
 
 .hero {
   height: 840px;
   background: url(./images/background.png);
+  position: relative;
 }
 
 .container {
@@ -37,7 +36,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.25em 0;
+  padding: 2.25rem 0 3.875rem;
 }
 
 .main-nav {
@@ -74,4 +73,69 @@ header {
 
 .brand-highlight {
   color: var(--clr-primary);
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-leftside {
+  display: flex;
+  flex-direction: column;
+  width: 37.5rem;
+  justify-content: space-around;
+}
+
+.hero-leftside > * {
+  color: var(--clr-light);
+}
+
+.hero-leftside h1 {
+  font-size: 3.5rem;
+  line-height: 1.345em;
+  font-weight: 700;
+}
+
+.hero-leftside p {
+  font-size: 1.25rem;
+  line-height: 1.6em;
+}
+
+.btn {
+  height: 3rem;
+  width: 8.75rem;
+  color: var(--clr-light);
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1.25rem;
+  /* font-weight: 700; */
+}
+
+.btn-primary {
+  background: var(--clr-primary);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--clr-light);
+}
+
+.hero-rightside {
+  background: pink;
+  background: url(./images/img.png);
+  height: 540px;
+  width: 440px;
+  border-radius: 24px;
+  background-position: top;
+}
+
+img.rightside-corner {
+  height: 256px;
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
 }
