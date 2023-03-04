@@ -23,6 +23,7 @@
 .hero {
   height: 840px;
   background: url(./images/background.png);
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -52,6 +53,9 @@ header {
 
 .navmenu a {
   text-decoration: none;
+}
+.navmenu a:hover {
+  opacity: 60%;
 }
 
 .main-nav .nav-link {
@@ -138,4 +142,11 @@ img.rightside-corner {
   bottom: 0;
   right: 0;
   object-fit: cover;
+}
+
+@media screen and (min-width: 1441px) {
+  .container {
+    width: 80%;
+    max-width: unset !important;
+  }
 }
