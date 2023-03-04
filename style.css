@@ -4,6 +4,7 @@
   --ff-primary: "Inter";
   --clr-primary: #3acf6e;
   --clr-primary-2: #1c57c9;
+  --clr-primary-3: #2053d1;
   --clr-light: #fff;
   --clr-black: #000;
   --clr-dark: #262b36;
@@ -20,17 +21,18 @@
   font-family: "Inter", sans-serif;
 }
 
+.container {
+  width: 90%;
+  max-width: 1192px;
+  margin: 0 auto;
+}
+
+/*Hero Section*/
 .hero {
   height: 840px;
   background: url(./images/background.png);
   background-repeat: no-repeat;
   position: relative;
-}
-
-.container {
-  width: 90%;
-  max-width: 1192px;
-  margin: 0 auto;
 }
 
 header {
@@ -142,6 +144,57 @@ img.rightside-corner {
   bottom: 0;
   right: 0;
   object-fit: cover;
+}
+
+/*Features section*/
+
+/* Features Section */
+
+#features {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.features-body {
+  display: flex;
+  align-items: center;
+  gap: 5.375rem;
+}
+
+.features-body .features-secondary-title {
+  color: var(--clr-primary-3);
+  letter-spacing: 0.625em;
+  text-transform: uppercase;
+}
+
+.features-body .features-main-title {
+  font-size: 2.625rem;
+  color: var(--clr-dark);
+  margin-top: 1.125rem;
+  margin-bottom: 1.625rem;
+}
+
+.features-body p {
+  font-size: 1.125rem;
+  line-height: 1.556rem;
+  color: var(--clr-gray);
+  padding-right: 1rem;
+  margin-bottom: 3.125rem;
+}
+
+.features-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+}
+
+.features-cards .features-card {
+  width: 45%;
+}
+
+.features-cards .features-card img {
+  width: 100%;
 }
 
 @media screen and (min-width: 1441px) {
