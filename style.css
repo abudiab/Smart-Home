@@ -151,9 +151,18 @@ img.rightside-corner {
 /* Features Section */
 
 #features {
-  min-height: 100vh;
+  min-height: 72rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+#features .starter-paragraph {
+  font-size: 1.25rem;
+  line-height: 1.6em;
+  color: var(--clr-gray);
+  margin: 8rem 0;
+  width: 85%;
 }
 
 .features-body {
@@ -196,6 +205,104 @@ img.rightside-corner {
 .features-cards .features-card img {
   width: 100%;
 }
+
+/* Updates Section */
+
+#updates {
+  height: 69rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.updates-body {
+  display: flex;
+  align-items: start;
+  gap: 5.375rem;
+}
+
+.updates-body .updates-left {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.updates-body .updates-secondary-title {
+  color: var(--clr-primary-3);
+  letter-spacing: 0.625em;
+  text-transform: uppercase;
+  margin: 3rem 0 1.25rem;
+}
+
+.updates-body .updates-main-title {
+  font-size: 2.625rem;
+  color: var(--clr-dark);
+  margin-bottom: 4rem;
+}
+
+.updates-body .updates-right {
+  width: 45%;
+}
+
+.updates-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 50%;
+  height: 69rem;
+  background-color: var(--clr-primary-2);
+  border-bottom-left-radius: 11.875rem;
+}
+
+.updates-cards {
+  height: 69rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.875rem;
+}
+
+.updates-cards .updates-card {
+  width: 100%;
+}
+
+.updates-cards .updates-card img {
+  width: 100%;
+}
+
+/* Services */
+
+#services {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.services-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-body .services-secondary-title {
+  color: var(--clr-primary-3);
+  letter-spacing: 0.625em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.services-body .services-main-title {
+  font-size: 2.625rem;
+  color: var(--clr-dark);
+  margin-bottom: 1.25rem;
+}
+
+/*Media Queries*/
 
 @media screen and (min-width: 1441px) {
   .container {
