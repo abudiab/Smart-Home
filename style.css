@@ -5,6 +5,73 @@
   --clr-primary: #3acf6e;
   --clr-primary-2: #1c57c9;
   --clr-light: #fff;
-  --clr-dark: #000;
+  --clr-black: #000;
+  --clr-dark: #262b36;
+  --clr-gray: #606b86;
   --max-width-desktop: 1440px;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--clr-dark);
+  font-weight: 400;
+}
+
+body {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.hero {
+  height: 840px;
+  background: url(./images/background.png);
+}
+
+.container {
+  width: 90%;
+  max-width: 1192px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.25em 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navmenu {
+  margin: 0px;
+  list-style: none;
+  display: flex;
+}
+
+.navmenu a {
+  text-decoration: none;
+}
+
+.main-nav .nav-link {
+  margin-left: 3.75em;
+  color: #fff;
+  opacity: 40%;
+}
+
+.sub-nav .nav-item {
+  margin-left: 2.625em;
+}
+.sub-nav .nav-link {
+  font-size: 13px;
+}
+
+.nav-item .active {
+  opacity: 100%;
+}
+
+.brand-highlight {
+  color: var(--clr-primary);
 }
