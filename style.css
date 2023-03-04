@@ -318,6 +318,11 @@ img.rightside-corner {
   justify-content: center;
 }
 
+footer img {
+  margin: 3rem 0;
+  width: 100%;
+}
+
 /*Media Queries*/
 
 @media screen and (min-width: 1441px) {
