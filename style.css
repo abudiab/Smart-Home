@@ -294,14 +294,14 @@ img.rightside-corner {
   justify-content: center;
 }
 
-.services-body .services-secondary-title {
+.services-secondary-title {
   color: var(--clr-primary-3);
   letter-spacing: 0.625em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
 }
 
-.services-body .services-main-title {
+.services-main-title {
   font-size: 2.625rem;
   color: var(--clr-dark);
   margin-bottom: 1.25rem;
@@ -309,6 +309,13 @@ img.rightside-corner {
 
 #services img {
   margin: 2rem 0 5rem;
+}
+
+.testimonials-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Media Queries*/
