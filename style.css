@@ -184,7 +184,7 @@ img.rightside-corner {
   margin-bottom: 1.625rem;
 }
 
-.features-body p {
+.section-paragraph {
   font-size: 1.125rem;
   line-height: 1.556rem;
   color: var(--clr-gray);
@@ -280,6 +280,11 @@ img.rightside-corner {
   align-items: center;
   position: relative;
   margin-top: 5rem;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(236, 240, 247, 1) 100%
+  );
 }
 
 .services-body {
@@ -300,6 +305,10 @@ img.rightside-corner {
   font-size: 2.625rem;
   color: var(--clr-dark);
   margin-bottom: 1.25rem;
+}
+
+#services img {
+  margin: 2rem 0 5rem;
 }
 
 /*Media Queries*/
